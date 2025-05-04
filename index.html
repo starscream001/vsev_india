@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Индийское Меню</title>
+  <style>
+    body { font-family: sans-serif; background: #fff8f0; margin: 0; padding: 20px; }
+    h1, h2 { text-align: center; color: #8b0000; }
+    .filters {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .filters button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #eee;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .filters button.active {
+      background-color: #8b0000;
+      color: white;
+    }
+    .category {
+      margin: 40px 0;
+      display: none;
+    }
+    .category.active {
+      display: block;
+    }
+    .item {
+      display: flex;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .item img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+    .info { max-width: 600px; }
+    .title { font-size: 18px; font-weight: bold; }
+    .description { font-size: 14px; color: #555; }
+    .price { font-weight: bold; margin-top: 5px; }
+  </style>
+</head>
+<body>
+<h1>Меню Июнь</h1>
+
+<div class="filters">
+  <button class="filter-button active" data-category="all">Все меню</button>
+  <button class="filter-button" data-category="zakuski">Закуски</button>
+  <button class="filter-button" data-category="karri">Карри</button>
+  <button class="filter-button" data-category="ris">Рис и лепешки</button>
+  <button class="filter-button" data-category="napitki">Напитки и десерты</button>
+</div>
+
+<!-- Блоки меню -->
+<div class="category zakuski active">
+  <h2>Закуски</h2>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Райта"/><div class="info"><div class="title">Райта</div><div class="description">Соус из йогурта с овощами, мятой и специями</div><div class="price">400 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Сабджи Панир"/><div class="info"><div class="title">Сабджи Панир</div><div class="description">Пряное рагу с домашним сыром и овощами</div><div class="price">600 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Чикен Тикка"/><div class="info"><div class="title">Чикен Тикка</div><div class="description">Курица на шпажках с овощами и соусом</div><div class="price">600 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Картофель фри"/><div class="info"><div class="title">Картофель фри</div><div class="description">Хрустящий картофель с чаат масала</div><div class="price">250 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Алу Зира"/><div class="info"><div class="title">Алу Зира</div><div class="description">Картофель с зирой и маслом гхи</div><div class="price">400 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Индийский салат"/><div class="info"><div class="title">Индийский салат</div><div class="description">Овощи с лимонно-мятной заправкой</div><div class="price">400 руб.</div></div></div>
+</div>
+
+<div class="category karri active">
+  <h2>Карри</h2>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Суп Дал"/><div class="info"><div class="title">Суп Дал</div><div class="description">Суп из маша, овощей, с маслом гхи</div><div class="price">500 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Кокосовое Панир"/><div class="info"><div class="title">Кокосовое Панир Карри</div><div class="description">Карри на кокосовом молоке с кашмирскими специями</div><div class="price">650 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Роган Джош"/><div class="info"><div class="title">Роган Джош</div><div class="description">Баранина по кашмирскому рецепту</div><div class="price">750 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Баттер Чикен"/><div class="info"><div class="title">Баттер Чикен Карри</div><div class="description">Сливочное карри с курицей и овощами</div><div class="price">650 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Палак Панир"/><div class="info"><div class="title">Палак Панир Карри</div><div class="description">Панир в сливочно-шпинатном соусе</div><div class="price">650 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Кашмир Дам Алу"/><div class="info"><div class="title">Кашмир Дам Алу</div><div class="description">Картофель в соусе с томатом и специями</div><div class="price">500 руб.</div></div></div>
+</div>
+
+<div class="category ris active">
+  <h2>Рис и лепешки</h2>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Бирьяни"/><div class="info"><div class="title">Бирьяни Вегетарианский</div><div class="description">Плов с овощами, кешью, сухофруктами и шафраном</div><div class="price">500 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Рис Басмати"/><div class="info"><div class="title">Рис Басмати</div><div class="description">Простой / с зирой / лимонный</div><div class="price">350 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Самоса"/><div class="info"><div class="title">Самоса</div><div class="description">Тесто с картофелем, сыром и специями</div><div class="price">175 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Нан"/><div class="info"><div class="title">Нан</div><div class="description">Лепешка с маслом гхи</div><div class="price">150 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Панир Нан"/><div class="info"><div class="title">Панир Нан</div><div class="description">Лепешка с сыром и зеленью</div><div class="price">300 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Чикен Нан"/><div class="info"><div class="title">Чикен Нан</div><div class="description">С курицей и пряностями</div><div class="price">300 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Алу Нан"/><div class="info"><div class="title">Алу Нан</div><div class="description">С картофелем и овощами</div><div class="price">250 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Гарлик Нан"/><div class="info"><div class="title">Гарлик Нан</div><div class="description">С чесноком</div><div class="price">180 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Макки Роти"/><div class="info"><div class="title">Макки Роти</div><div class="description">Кукурузная лепешка с маслом гхи</div><div class="price">150 руб.</div></div></div>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Роти"/><div class="info"><div class="title">Роти</div><div class="description">Традиционная индийская лепешка из пресного теста</div><div class="price">80 руб.</div></div></div>
+</div>
+
+<div class="category napitki active">
+  <h2>Напитки и десерты</h2>
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Масала Чай"/><div class="info"><div class="title">Масала Чай</div><div class="description">Традиционный индийский черный чай с молоком, пряностями и шафраном</div><div class="price">180 руб.</div></div></div>
+
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Чай Гималаи"/><div class="info"><div class="title">Чай «Гималаи»</div><div class="description">Аюрведический травяной чай со специями и медом</div><div class="price">150 руб.</div></div></div>
+
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Масала Глинтвейн"/><div class="info"><div class="title">Масала Глинтвейн</div><div class="description">Безалкогольный глинтвейн из соков с фруктами и пряностями</div><div class="price">250 руб.</div></div></div>
+
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Манго Ласси"/><div class="info"><div class="title">Манго Ласси</div><div class="description">Йогуртовый коктейль с мякотью манго и кардамоном</div><div class="price">300 руб.</div></div></div>
+
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Вода без газа"/><div class="info"><div class="title">Вода без газа</div><div class="description">Обычная вода</div><div class="price">100 руб.</div></div></div>
+
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Домашний лимонад"/><div class="info"><div class="title">Домашний лимонад</div><div class="description">Освежающий цитрусово-имбирный лимонад с мятой</div><div class="price">170 руб.</div></div></div>
+
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Халва"/><div class="info"><div class="title">Халва (по заказу)</div><div class="description">Халва с маслом гхи, орехами, сухофруктами, шафраном и кардамоном</div><div class="price">400 руб.</div></div></div>
+
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Кхир"/><div class="info"><div class="title">Кхир (по заказу)</div><div class="description">Сладкий рисовый пудинг с орехами кешью и изюмом</div><div class="price">400 руб.</div></div></div>
+
+  <div class="item"><img src="https://via.placeholder.com/150" alt="Гулаб Джамун"/><div class="info"><div class="title">Гулаб Джамун (2 шт.)</div><div class="description">Молочные шарики в кардамоново-розовом сиропе</div><div class="price">300 руб.</div></div></div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll(".filter-button");
+  const categories = document.querySelectorAll(".category");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const selected = button.getAttribute("data-category");
+
+      buttons.forEach(b => b.classList.remove("active"));
+      button.classList.add("active");
+
+      categories.forEach(cat => {
+        if (selected === "all") {
+          cat.classList.add("active");
+        } else {
+          cat.classList.remove("active");
+          if (cat.classList.contains(selected)) cat.classList.add("active");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
+
+ 
