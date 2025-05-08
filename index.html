@@ -56,9 +56,10 @@
 <div class="filters">
   <button class="filter-button active" data-category="all">Все меню</button>
   <button class="filter-button" data-category="zakuski">Закуски</button>
-  <button class="filter-button" data-category="karri">Карри</button>
-  <button class="filter-button" data-category="ris">Рис и лепешки</button>
-  <button class="filter-button" data-category="napitki">Напитки и десерты</button>
+  <button class="filter-button" data-category="karri">Карри (блюда из овощей/ бобовых/ мяса/ домашнего сыра, тушеные в густом пряном соусе)</button>
+  <button class="filter-button" data-category="ris">Лепешки</button>
+  <button class="filter-button" data-category="napitki">Напитки</button>
+  <button class="filter-button" data-category="desert">Десерты индийские</button>
 </div>
 
 <!-- Блоки меню -->
@@ -68,7 +69,7 @@
   <div class="item"><img src="images/raita.png" alt="Райта"/><div class="info"><div class="title">Райта (250 мл)</div><div class="description">Соус из домашнего йогурта с овощами, зеленью, мягкими специями и мятной приправой</div><div class="price">400 руб.</div></div></div>
   <div class="item"><img src="images/sabji_panir.png" alt="Сабджи Панир"/><div class="info"><div class="title">Сабджи Панир (350г)</div><div class="description">Пряное рагу с домашним сыром и сезонными овощами</div><div class="price">600 руб.</div></div></div>
   <div class="item"><img src="images/chicken_tikka.png" alt="Чикен Тикка"/><div class="info"><div class="title">Чикен Тикка с салатом (300г)</div><div class="description">Нежная сочная курица на шпажках с золотистой корочкой, замаринованная в пряностях и мёде с имбирём. Подаётся со свежими овощами и соусом</div><div class="price">600 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Картофель фри"/><div class="info"><div class="title">Картофель фри (250г)</div><div class="description">Хрустящий картофель в индийском стиле с чаат масала</div><div class="price">250 руб.</div></div></div>
+  <div class="item"><img src="images/alu.png" alt="Картофель фри"/><div class="info"><div class="title">Картофель фри (250г)</div><div class="description">Хрустящий картофель в индийском стиле с чаат масала</div><div class="price">250 руб.</div></div></div>
   <div class="item"><img src="images/alu.png" alt="Алу Зира"/><div class="info"><div class="title">Алу Зира (300г)</div><div class="description">Ароматный картофель, приготовленный с приправами и зирой, сдобренный топлёным маслом гхи</div><div class="price">400 руб.</div></div></div>
   <div class="item"><img src="images/soup_dal.png" alt="Суп Дал"/><div class="info"><div class="title">Суп Дал (350мл)</div><div class="description">Питательный домашний суп из маша, овощей, приправленный топлёным маслом гхи, дольками лимона и свежим кориандром</div><div class="price">500 руб.</div></div></div>
   </div>
@@ -76,48 +77,49 @@
 
 <div class="category karri active">
   <h2>Карри</h2>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Кокосовое Панир"/><div class="info"><div class="title">Кокосовое Панир Карри (350г)</div><div class="description">Карри на 100%-ном кокосовом молоке с нежной текстурой и лёгким ароматом кокоса</div><div class="price">650 руб.</div></div></div>
+  <div class="item"><img src="images/kokos_panir.png" alt="Кокосовое Панир"/><div class="info"><div class="title">Кокосовое Панир Карри (350г)</div><div class="description">Карри на 100%-ном кокосовом молоке с нежной текстурой и лёгким ароматом кокоса</div><div class="price">650 руб.</div></div></div>
   <div class="item"><img src="images/rogan.png" alt="Роган Джош"/><div class="info"><div class="title">Роган Джош (350г)</div><div class="description">Ароматное блюдо из баранины кашмирского происхождения с имбирём и кашмирскими специями</div><div class="price">750 руб.</div></div></div>
   <div class="item"><img src="images/batter_chicken_karry.png" alt="Баттер Чикен"/><div class="info"><div class="title">Баттер Чикен Карри (350г)</div><div class="description">Опьяняющее сливочное блюдо из курицы и овощей, приготовленное по старинному индийскому рецепту</div><div class="price">650 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Палак Панир"/><div class="info"><div class="title">Палак Панир Карри (350г)</div><div class="description">Лёгкое традиционное карри из молочного сыра панир в сливочно-шпинатном соусе</div><div class="price">650 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Кашмир Дам Алу"/><div class="info"><div class="title">Кашмир Дам Алу (350г)</div><div class="description">Популярное северо-индийское карри. Небольшие картофелины быстро обжариваются во фритюре, а затем тушатся в восхитительном соусе из томата и большого количества специй</div><div class="price">500 руб.</div></div></div>
+  <div class="item"><img src="images/palac_panir_karri.png" alt="Палак Панир"/><div class="info"><div class="title">Палак Панир Карри (350г)</div><div class="description">Лёгкое традиционное карри из молочного сыра панир в сливочно-шпинатном соусе</div><div class="price">650 руб.</div></div></div>
+  <div class="item"><img src="images/kashmir_dam_alu.png" alt="Кашмир Дам Алу"/><div class="info"><div class="title">Кашмир Дам Алу (350г)</div><div class="description">Популярное северо-индийское карри. Небольшие картофелины быстро обжариваются во фритюре, а затем тушатся в восхитительном соусе из томата и большого количества специй</div><div class="price">500 руб.</div></div></div>
 </div>
+  <div class="item"><img src="images/biryani_vegan.png" alt="Бирьяни"/><div class="info"><div class="title">Бирьяни Вегетарианский (350г)</div><div class="description">Трацидионный индийский плов из риса басмати, овощей, тушёных в топлёном масле гхи, с добавлением ореха кешью, сухофруктов и, конечно, специй и шафрана</div><div class="price">500 руб.</div></div></div>
+  <div class="item"><img src="images/ris_basmati.png" alt="Рис Басмати"/><div class="info"><div class="title">Рис Басмати (300г)</div><div class="description">Простой / с зирой / лимонный</div><div class="price">350 руб.</div></div></div>
 
 <div class="category ris active">
-  <h2>Рис и лепешки</h2>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Бирьяни"/><div class="info"><div class="title">Бирьяни Вегетарианский (350г)</div><div class="description">Трацидионный индийский плов из риса басмати, овощей, тушёных в топлёном масле гхи, с добавлением ореха кешью, сухофруктов и, конечно, специй и шафрана</div><div class="price">500 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Рис Басмати"/><div class="info"><div class="title">Рис Басмати (300г)</div><div class="description">Простой / с зирой / лимонный</div><div class="price">350 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Самоса"/><div class="info"><div class="title">Самоса (100г) подаётся с соусом чатни</div><div class="description">Тающая во рту самоса  из нежного домашнего теста с картофелем, сыром, зеленью и мягкими специями</div><div class="price">175 руб./шт</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Нан"/><div class="info"><div class="title">Нан (150г)</div><div class="description">Лепешка без начинки с маслом гхи</div><div class="price">150 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Панир Нан"/><div class="info"><div class="title">Панир Нан (250г)</div><div class="description">Лепешка с домашним сыром и зеленью</div><div class="price">300 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Чикен Нан"/><div class="info"><div class="title">Чикен Нан (250г)</div><div class="description">Лепёшка с курицей и пряностями</div><div class="price">300 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Алу Нан"/><div class="info"><div class="title">Алу Нан (250г)</div><div class="description">Лепёшка с картофелем, овощами и травами</div><div class="price">250 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Гарлик Нан"/><div class="info"><div class="title">Гарлик Нан (150г)</div><div class="description">Хрустящая лепёшка с чесноком, известная по всему миру</div><div class="price">180 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Макки Роти"/><div class="info"><div class="title">Макки Роти (100г)</div><div class="description">Кукурузная лепешка на домашнем йогурте с топлёным маслом гхи</div><div class="price">150 руб.</div></div></div>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Роти"/><div class="info"><div class="title">Роти (50г)</div><div class="description">Традиционная индийская лепешка из пресного теста</div><div class="price">80 руб.</div></div></div>
+  <h2>Лепешки</h2>
+  <div class="item"><img src="images/samosa.png" alt="Самоса"/><div class="info"><div class="title">Самоса (100г) подаётся с соусом чатни</div><div class="description">Тающая во рту самоса  из нежного домашнего теста с картофелем, сыром, зеленью и мягкими специями</div><div class="price">175 руб./шт</div></div></div>
+  <div class="item"><img src="images/nan.png" alt="Нан"/><div class="info"><div class="title">Нан (150г)</div><div class="description">Лепешка без начинки с маслом гхи</div><div class="price">150 руб.</div></div></div>
+  <div class="item"><img src="images/nan.png" alt="Панир Нан"/><div class="info"><div class="title">Панир Нан (250г)</div><div class="description">Лепешка с домашним сыром и зеленью</div><div class="price">300 руб.</div></div></div>
+  <div class="item"><img src="images/nan.png" alt="Чикен Нан"/><div class="info"><div class="title">Чикен Нан (250г)</div><div class="description">Лепёшка с курицей и пряностями</div><div class="price">300 руб.</div></div></div>
+  <div class="item"><img src="images/nan.png" alt="Алу Нан"/><div class="info"><div class="title">Алу Нан (250г)</div><div class="description">Лепёшка с картофелем, овощами и травами</div><div class="price">250 руб.</div></div></div>
+  <div class="item"><img src="images/garlik%20nan.png" alt="Гарлик Нан"/><div class="info"><div class="title">Гарлик Нан (150г)</div><div class="description">Хрустящая лепёшка с чесноком, известная по всему миру</div><div class="price">180 руб.</div></div></div>
+  <div class="item"><img src="images/makki%20roti.png" alt="Макки Роти"/><div class="info"><div class="title">Макки Роти (100г)</div><div class="description">Кукурузная лепешка на домашнем йогурте с топлёным маслом гхи</div><div class="price">150 руб.</div></div></div>
+  <div class="item"><img src="images/roti.png" alt="Роти"/><div class="info"><div class="title">Роти (50г)</div><div class="description">Традиционная индийская лепешка из пресного теста</div><div class="price">80 руб.</div></div></div>
 </div>
 
 <div class="category napitki active">
-  <h2>Напитки и десерты</h2>
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Масала Чай"/><div class="info"><div class="title">Масала Чай (250мл)</div><div class="description">Традиционный индийский черный чай с молоком и согревающими пряностями и шафраном</div><div class="price">180 руб.</div></div></div>
+  <h2>Напитки</h2>
+  <div class="item"><img src="images/macala%20chai.png" alt="Масала Чай"/><div class="info"><div class="title">Масала Чай (250мл)</div><div class="description">Традиционный индийский черный чай с молоком и согревающими пряностями и шафраном</div><div class="price">180 руб.</div></div></div>
 
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Чай Гималаи"/><div class="info"><div class="title">Чай «Гималаи» (250мл)</div><div class="description">Аюрведический травяной чай с пряностями и мёдом</div><div class="price">150 руб.</div></div></div>
+  <div class="item"><img src="images/chai%20Gimalai.png" alt="Чай Гималаи"/><div class="info"><div class="title">Чай «Гималаи» (250мл)</div><div class="description">Аюрведический травяной чай с пряностями и мёдом</div><div class="price">150 руб.</div></div></div>
 
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Масала Глинтвейн"/><div class="info"><div class="title">Масала Глинтвейн (250мл)</div><div class="description">Безалкогольный глинтвейн из виноградного и апельсинового сока с фруктами, имбирём и пряностями</div><div class="price">250 руб.</div></div></div>
+  <div class="item"><img src="images/masala%20glintvein.png" alt="Масала Глинтвейн"/><div class="info"><div class="title">Масала Глинтвейн (250мл)</div><div class="description">Безалкогольный глинтвейн из виноградного и апельсинового сока с фруктами, имбирём и пряностями</div><div class="price">250 руб.</div></div></div>
 
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Манго Ласси"/><div class="info"><div class="title">Манго Ласси (250мл)</div><div class="description">Нежный йогуртовый коктейль с мякотью манго и кардамоном</div><div class="price">300 руб.</div></div></div>
+  <div class="item"><img src="images/mango%20lassi.png" alt="Манго Ласси"/><div class="info"><div class="title">Манго Ласси (250мл)</div><div class="description">Нежный йогуртовый коктейль с мякотью манго и кардамоном</div><div class="price">300 руб.</div></div></div>
 
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Вода без газа"/><div class="info"><div class="title">Вода без газа</div><div class="description"></div><div class="price">100 руб.</div></div></div>
+  <div class="item"><img src="images/voda.png" alt="Вода без газа"/><div class="info"><div class="title">Вода без газа</div><div class="description"></div><div class="price">100 руб.</div></div></div>
 
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Домашний лимонад"/><div class="info"><div class="title">Домашний лимонад (250мл)</div><div class="description">Освежающий цитрусово-имбирный лимонад с мятой</div><div class="price">170 руб.</div></div></div>
+  <div class="item"><img src="images/limonad.png" alt="Домашний лимонад"/><div class="info"><div class="title">Домашний лимонад (250мл)</div><div class="description">Освежающий цитрусово-имбирный лимонад с мятой</div><div class="price">170 руб.</div></div></div>
 
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Халва"/><div class="info"><div class="title">Халва (по предварительному заказу) (250мг)</div><div class="description">Нежная традиционная халва с топлёным маслом, орехами, сухофруктами, приправленная корицей, шафраном и кардамоном</div><div class="price">400 руб.</div></div></div>
+<div class="category desert active">
+  <h2>Десерты индийские</h2>
+  <div class="item"><img src="images/halva.png" alt="Халва"/><div class="info"><div class="title">Халва (по предварительному заказу) (250мг)</div><div class="description">Нежная традиционная халва с топлёным маслом, орехами, сухофруктами, приправленная корицей, шафраном и кардамоном</div><div class="price">400 руб.</div></div></div>
 
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Кхир"/><div class="info"><div class="title">Кхир (по предварительному заказу) (250мг)</div><div class="description">Сладкий рисовый пудинг, приготовленный с орехами кешью/миндалём, изюмом, шафраном, кардамоном</div><div class="price">400 руб.</div></div></div>
+  <div class="item"><img src="images/khir.png" alt="Кхир"/><div class="info"><div class="title">Кхир (по предварительному заказу) (250мг)</div><div class="description">Сладкий рисовый пудинг, приготовленный с орехами кешью/миндалём, изюмом, шафраном, кардамоном</div><div class="price">400 руб.</div></div></div>
 
-  <div class="item"><img src="https://via.placeholder.com/150" alt="Гулаб Джамун"/><div class="info"><div class="title">Гулаб Жамун (2 шт)</div><div class="description">Классический индийский десерт. Нежные молочные шарики в кардамоново-розовом сиропе</div><div class="price">300 руб.</div></div></div>
+  <div class="item"><img src="images/gulab%20wamun.png" alt="Гулаб Джамун"/><div class="info"><div class="title">Гулаб Жамун (2 шт)</div><div class="description">Классический индийский десерт. Нежные молочные шарики в кардамоново-розовом сиропе</div><div class="price">300 руб.</div></div></div>
 </div>
-
 
 <script>
   const buttons = document.querySelectorAll(".filter-button");
